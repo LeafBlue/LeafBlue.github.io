@@ -12,13 +12,35 @@ body {
 	height: 150%;
 }
 
+/*自定义字体*/
+@font-face {
+  font-family: 'MyLocalFont1';
+  src: url('../font/方正细倩简体.ttf');
+}
+
+@font-face {
+  font-family: 'MyLocalFont2';
+  src: url('../font/方正细谭黑简体.TTF');
+}
+
+@font-face {
+  font-family: 'MyLocalFont3';
+  src: url('../font/方正稚艺简体.TTF');
+}
+
+@font-face {
+  font-family: 'MyLocalFont4';
+  src: url('../font/方正中倩简体.TTF');
+}
+
+
 #headdiv{
 	width: 80%;
 	height: 40%;
 	position: relative;
 	margin: auto;
 }
-
+/*设置头像框（以后有了新的可以换）*/
 #headimg{
 	width: 100%;
 	height: 100%;
@@ -35,17 +57,56 @@ body {
 	left: 1%;
 	bottom: -10%;
 }
-
-#username h1{
+/*用户名样式*/
+#userid{
 	text-align: left;
-	color: aliceblue;
+	
+	
+	background: #fff
+	        linear-gradient(
+	        -135deg,
+	        transparent 25%,
+	        transparent 40%,
+	        rgba(255,0,0,0.3) 40%,/* 这两个值是滑动条的颜色 */
+	        rgba(255,0,0,0.3) 60%,/* 默认是绿色 自己更改即可 */
+	        transparent 60%,
+	        transparent
+	        );
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: scratchy 3s linear infinite;
+
+	
+	font-size: 250%;
+	font-family: 'MyLocalFont1';
 }
 
-#username h3{
+@keyframes scratchy {
+    0% {
+        background-position: -10% 0;
+    }
+    100% {
+        background-position: 10% 0;
+    }
+}
+/*个性签名样式*/
+#gexingqianming{
 	text-align: left;
 	color: aliceblue;
+	margin-top: 10px;
+	font-size: 150%;
+	font-family: 'MyLocalFont1';
+	animation: blink 2s infinite;
 }
 
+@keyframes blink {
+  0% { color: white; }
+  50% { color: gray; }
+  100% { color: white; }
+}
+/*设置头像*/
 #headpic{
 	width: 350px;
 	height: 350px;
@@ -65,3 +126,24 @@ body {
 	background-image: url('../img/background/bigback.png');
 	background-size: 100% 100%;
 }
+
+#back1{
+	width: 100%;
+	height: 30%;
+	margin: auto;
+	background-image: url('../img/background/butterfly.png');
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
