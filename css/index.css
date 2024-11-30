@@ -1,0 +1,67 @@
+html {
+	height: 100%;
+}
+ 
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 150%;
+}
+
+#headdiv{
+	width: 80%;
+	height: 40%;
+	position: relative;
+	margin: auto;
+}
+
+#headimg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image:url('../img/background/headback.png');
+	background-size: 100% 100%;
+	
+}
+
+#username{
+	width: 50%;
+	height: 30%;
+	position: absolute;
+	left: 1%;
+	bottom: -10%;
+}
+
+#username h1{
+	text-align: left;
+	color: aliceblue;
+}
+
+#username h3{
+	text-align: left;
+	color: aliceblue;
+}
+
+#headpic{
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	left: 1%;
+	bottom: 20%;
+	background-image:url('../img/headpic/headpic2.jpg');
+	background-size: 100% 100%;
+}
+
+
+
+#bigdiv{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	background-image: url('../img/background/bigback.png');
+	background-size: 100% 100%;
+}
