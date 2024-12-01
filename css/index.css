@@ -48,6 +48,36 @@ body {
   src: url('../font/新蒂剪纸体.ttf');
 }
 
+@font-face {
+  font-family: 'MyLocalFont8';
+  src: url('../font/方正粗圆繁体.ttf');
+}
+
+@font-face {
+  font-family: 'MyLocalFont9';
+  src: url('../font/方正胖娃繁体.ttf');
+}
+
+@font-face {
+  font-family: 'MyLocalFont10';
+  src: url('../font/方正准圆繁体.ttf');
+}
+
+@font-face {
+  font-family: 'MyLocalFont11';
+  src: url('../font/文鼎弹簧体.TTF');
+}
+
+@font-face {
+  font-family: 'MyLocalFont12';
+  src: url('../font/文鼎新潮POP体.ttf');
+}
+
+@font-face {
+  font-family: 'MyLocalFont13';
+  src: url('../font/华康海报体W12.ttf');
+}
+
 
 #headdiv{
 	width: 80%;
@@ -78,15 +108,15 @@ body {
 	
 	
 	background: #fff
-	        linear-gradient(
-	        -135deg,
-	        transparent 25%,
-	        transparent 40%,
-	        rgba(255,0,0,0.3) 40%,/* 这两个值是滑动条的颜色 */
-	        rgba(255,0,0,0.3) 60%,/* 默认是绿色 自己更改即可 */
-	        transparent 60%,
-	        transparent
-	        );
+	linear-gradient(
+	-135deg,
+	transparent 25%,
+	transparent 40%,
+	rgba(255,0,0,0.3) 40%,/* 这两个值是滑动条的颜色 */
+	rgba(255,0,0,0.3) 60%,/* 默认是绿色 自己更改即可 */
+	transparent 60%,
+	transparent
+	);
 	background-size: 60px 60px;
 	background-repeat: no-repeat;
 	-webkit-background-clip: text;
@@ -140,7 +170,8 @@ body {
 	width: 80%;
 	height: 100%;
 	margin: auto;
-	background-image: url('../img/background/bigback.png');
+	position: relative;
+	background-image: url('../img/background/bigback4.png');
 	background-size: 100% 100%;
 }
 /*蝴蝶图片轮播效果*/
@@ -180,9 +211,9 @@ body {
 	position: absolute;
 	right: 5%;
 	top: 40%;
-	border: solid 5px;
-	border-image-source: url('../img/background/glass1.png');
-	border-image-slice: 8;
+	border: solid 10px;
+	border-image-source: url('../img/background/glass2.png');
+	border-image-slice: 3;
 	background-image: url('../img/background/motianlun1.png');
 	background-size: 100% 100%;
 	
@@ -247,4 +278,130 @@ body {
 	cursor: pointer;
 }
 
+#back4{
+	width: 25%;
+	height: 25%;
+	margin: auto;
+	position: absolute;
+	top:10%;
+	left: 10%;
+	background-image: url('../img/background/sounds.png');
+	background-size: 100% 100%;
+	
+	transform: rotate(-10deg);
+	border-top: solid 45px;
+	border-bottom: solid 45px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-image-source: url('../img/background/glass3.png');
+	border-image-slice: 45;
+}
 
+
+#back5{
+	width: 20%;
+	height: 25%;
+	margin: auto;
+	position: absolute;
+	top:35%;
+	right: 10%;
+	background-image: url('../img/background/bike.png');
+	background-size: 100% 100%;
+	transform: rotate(10deg);
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	z-index: 50;
+}
+
+#back6{
+	width: 90%;
+	height: 45%;
+	margin: auto;
+	position: absolute;
+	bottom: 2%;
+	left: 5%;
+	
+	background-image: url('../img/background/downback1.png');
+	background-size: 100% 100%;
+	z-index: 10;
+}
+
+#yishu1{
+	width: 30%;
+	height: 12%;
+	margin: auto;
+	position: absolute;
+	left: 15%;
+	top:45%;
+	z-index: 99;
+}
+
+#yishu1 div{
+	font-size: 300%;
+	font-weight: bolder;
+	
+}
+
+#yishu11{
+	position: absolute;
+	top: 35%;
+	left: 2%;
+	color: gray;
+	text-shadow: 2px 3px 1px lightcyan;
+	font-family: 'MyLocalFont4';
+}
+
+#yishu12{
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	color: red;
+	text-shadow: 2px 3px 1px lightgrey;
+	font-family: 'MyLocalFont2';
+}
+#yishu13{
+	position: absolute;
+	top: 25%;
+	left: 68%;
+	color: lightgray;
+	text-shadow: 2px 3px 1px lightcyan;
+	font-family: 'MyLocalFont1';
+}
+
+#yishu2{
+	width: 22%;
+	height: 14%;
+	margin: auto;
+	position: absolute;
+	right: 15%;
+	top:10%;
+	z-index: 99;
+	
+	border: 10px solid;
+	animation: slideborderimg 1S infinite;
+	border-image-slice: 12 10;
+	border-image-repeat: repeat;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	
+	font-size: 150%;
+	font-family: 'MyLocalFont2';
+}
+
+@keyframes slideborderimg {
+	0% {
+      border-image-source: url('../img/background/glass5.png');
+	  color: white;
+    }
+    50% {
+      border-image-source: url('../img/background/glass4.png');
+	  color: firebrick;
+    }
+	100% {
+	  border-image-source: url('../img/background/glass5.png');
+	  color: white;
+	}
+}
